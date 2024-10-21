@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>uHost Plans</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+      * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: rgb(51, 51, 51);
+    background-image: url(freedom.jpg);
+    
+}
+
+header {
+    background-color: rgb(0, 177, 79);
+    padding: 20px;
+    color: white;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+}
+
+.navbar ul li {
+    margin-left: 20px;
+}
+
+.navbar ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.btn-hosting {
+    background-color: rgb(255, 64, 129);
+    padding: 10px 20px;
+    border-radius: 20px;
+    color: white;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.hero {
+    background-image: url('hero.jpg'); /* Image background */
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    padding: 80px 20px;
+}
+
+.hero h1 {
+    font-size: 48px;
+    font-weight: bold;
+    color: white;
+}
+
+main {
+    padding: 40px 20px;
+}
+
+.pricing h2 {
+    text-align: center;
+    font-size: 36px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    /* margin-top: 400px; */
+    color: rgb(0, 177, 79);
+    /* background-color: white; */
+}
+.pricing {
+  background-color: white;
+  margin-top: 460px;
+  margin-right: 0px;
+  margin-left: 0px;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+
+.plans {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.plan {
+    background-color: rgb(240, 248, 248);
+    border-radius: 10px;
+    padding: 20px;
+    width: 300px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.recommended {
+    background-color: rgb(0, 177, 79);
+    color: white;
+}
+
+.price {
+    font-size: 24px;
+    font-weight: bold;
+    margin: 20px 0;
+}
+
+.plan ul {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 20px;
+}
+
+.plan ul li {
+    margin-bottom: 10px;
+}
+
+.btn {
+    display: inline-block;
+    background-color: rgb(255, 64, 129);
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 20px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.reasons {
+    background-color: rgb(255, 64, 129);
+    padding: 40px 20px;
+    color: white;
+    text-align: center;
+}
+
+.features {
+    display: flex;
+    justify-content: center;
+    gap: 150px;
+    padding-top: 20px;
+}
+
+.featuress {
+    display: flex;
+    justify-content: center;
+    gap: 110px;
+    padding-top: 20px;
+    margin-right: 30px;
+}
+
+.feature {
+    background-color: rgb(255, 240, 248);
+    border-radius: 50%;
+    padding: 20px;
+    width: 150px;
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+footer {
+    background-color: rgb(0, 0, 0);
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.footers {
+    background-color:white
+  
+}
+
+
+.footer-linkss a {
+    color: white;
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+
+.footer-links a {
+    color: white;
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+/* Media Queries for Responsive Design */
+@media (max-width: 768px) {
+      .plans {
+          flex-direction: column;
+          align-items: center;
+      }
+
+      .navbar ul {
+          flex-direction: column;
+          align-items: center;
+      }
+
+      .navbar ul li {
+          margin-left: 0;
+          margin-bottom: 10px;
+      }
+
+      .hero h1 {
+          font-size: 36px;
+      }
+
+      .pricing {
+          margin-top: 100px;
+      }
+
+      .features, .featuress {
+          flex-direction: column;
+          gap: 20px;
+      }
+  }
+
+  @media (max-width: 480px) {
+      .hero h1 {
+          font-size: 28px;
+      }
+
+      .plan {
+          width: 100%;
+          margin-bottom: 20px;
+      }
+
+      .features, .featuress {
+          flex-direction: column;
+          gap: 10px;
+      }
+
+      .feature {
+          width: 100px;
+          height: 100px;
+          padding: 10px;
+      }
+
+      .price {
+          font-size: 20px;
+      }
+  }
+
+
+    </style>
+    
+</head>
+<body>
+  
+
+
+    <header>
+        <div class="navbar">
+            <div class="logo">uHost</div>
+            <nav>
+                <ul>
+                    <li><a href="#">Packages</a></li>
+                    <li><a href="#">Customers</a></li>
+                    <li><a href="#" class="btn-hosting">Start Hosting</a></li>
+                </ul>
+                
+            </nav>
+        </div>
+    </header>
+
+    <!-- <section class="hero">
+        <h1>Get the freedom you deserve.</h1>
+    </section> -->
+<section class="pricing">
+            <h2>Choose Your Plan</h2>
+            <div class="plans">
+
+                <div class="plan" style="box-sizing: border-box;">
+                    <h3>FREE</h3>
+                    <p class="price">$0/month</p>
+                    <p>For hobby projects or small teams.</p>
+                    <ul>
+                        <li>1 Workspace</li>
+                        <li>Unlimited Traffic</li>
+                        <li>10GB Storage</li>
+                        <li>Basic Support</li>
+                    </ul>
+                    <a href="#" class="btn">Choose Plan</a>
+                </div>
+
+                <div class="plan recommended" style="box-sizing: border-box;">
+                    <h3>PLUS</h3>
+                    <p class="price">$29/month</p>
+                    <p>For ambitious projects.</p>
+                    <ul>
+                        <li>5 Workspaces</li>
+                        <li>Unlimited Traffic</li>
+                        <li>100GB Storage</li>
+                        <li>Plus Support</li>
+                    </ul>
+                    <a href="#" class="btn">Choose Plan</a>
+                </div>
+
+                <div class="plan" style="box-sizing: border-box;">
+                    <h3>PREMIUM</h3>
+                    <p class="price">$99/month</p>
+                    <p>Your enterprise solution.</p>
+                    <ul>
+                        <li>10 Workspaces</li>
+                        <li>Unlimited Traffic</li>
+                        <li>Unlimited Storage</li>
+                        <li>Priority Support</li>
+                    </ul>
+                    <a href="#" class="btn">Choose Plan</a>
+                </div>
+            </div>
+        </section>
+    
+
+    <section class="reasons">
+      <h2>Many Good Reasons to Stick Around</h2>
+      <div class="features">
+          <div class="feature">
+          </div>
+          
+          <div class="feature">   
+          </div>
+          
+          <div class="feature">
+          </div>
+      </div>
+      <div class="featuress">
+      <p>3,857,000 Trusting Customers</p>
+      <p>99.9999% Uptime Guarantee</p>
+      <p>Lightning Fast CDN</p>
+     </div>
+  </section>
+
+  <footer class="footers">
+    <div class="footer-linkss">
+        <a href="#"></a>
+        <a href="#"></a>
+    </div>
+</footer>
+
+    <footer>
+        <div class="footer-links">
+            <a href="#">Support</a>
+            <a href="#">Terms of Use</a>
+        </div>
+    </footer>
+</body>
+</html>
+
+
